@@ -134,7 +134,7 @@ namespace Fungus.EditorUtils
             handles[1] = view.transform.TransformPoint(new Vector3(0, viewSize, 0));
 
             Handles.color = Color.white;
-            /*
+            
             for (int i = 0; i < 2; ++i)
             {
                 var fmh_141_57_638389280157488071 = Quaternion.identity; Vector3 newPos = Handles.FreeMoveHandle(handles[i],
@@ -153,7 +153,7 @@ namespace Fungus.EditorUtils
                     EditorUtility.SetDirty(view);
                     break;
                 }
-            }*/
+            }
         }
 
         public static void DrawView(View view, bool drawInterior)
