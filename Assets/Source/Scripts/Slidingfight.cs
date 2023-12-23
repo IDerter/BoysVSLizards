@@ -13,10 +13,13 @@ public class Slidingfight : MonoBehaviour
     [SerializeField] private GameObject VictoryButton, MissedButton, HitButton, EnemyImage;
     [SerializeField] private GameObject EnemyForegroundHealthBar, PlayerForegroundHealthBar;
     [SerializeField] private float DamageOfPlayer = 0.15f, DamageOfEnemy=0.33f;
+    [SerializeField] private float _speedSlider;
+
     private Color ChangingColor;
     private bool EnemyWasHit = false;
 
     private bool GoRight = true, GoLeft = false;
+
 
     private void Start()
     {
@@ -82,7 +85,7 @@ public class Slidingfight : MonoBehaviour
     {
         if (GoRight)
         {
-            SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, RightBorder.transform.position, 1.5f * Time.deltaTime);
+            SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, RightBorder.transform.position, _speedSlider * Time.deltaTime);
             if (SlidingBar.transform.position.x > RightStopper.transform.position.x)
             {
                 GoLeft = true;
@@ -91,7 +94,7 @@ public class Slidingfight : MonoBehaviour
         }
         else if (GoLeft)
         {
-            SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, LeftBorder.transform.position, 1.5f * Time.deltaTime);
+            SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, LeftBorder.transform.position, _speedSlider * Time.deltaTime);
             if (SlidingBar.transform.position.x < LeftStopper.transform.position.x)
             {
                 GoRight = true;
