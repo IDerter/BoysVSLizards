@@ -19,7 +19,7 @@ namespace BoysVsLizards
         [SerializeField] private float SliderSpeed;
         [SerializeField] VariableReference Fungusint;
 
-        private bool GoRight = true, GoLeft = false;
+        private bool GoRight = true;
 
         private void Start()
         {
@@ -83,24 +83,24 @@ namespace BoysVsLizards
         }
         private void HandleMovement()
         {
+            Vector3 TargetPos;
             if (GoRight)
             {
-                SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, RightBorder.transform.position, SliderSpeed * Time.deltaTime);
+                TargetPos = RightBorder.transform.position;
                 if (SlidingBar.transform.position.x > RightStopper.transform.position.x)
                 {
-                    GoLeft = true;
                     GoRight = false;
                 }
             }
-            else if (GoLeft)
+            else 
             {
-                SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, LeftBorder.transform.position, SliderSpeed * Time.deltaTime);
+                TargetPos = LeftBorder.transform.position;
                 if (SlidingBar.transform.position.x < LeftStopper.transform.position.x)
                 {
                     GoRight = true;
-                    GoLeft = false;
                 }
             }
+            SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, TargetPos, SliderSpeed * Time.deltaTime);
         }
         public void ApplyDamageToPlayer()
         {
