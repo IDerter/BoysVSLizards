@@ -353,7 +353,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8253068718313110965, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
+      propertyPath: _flowchart
+      value: 
+      objectReference: {fileID: 1340447976}
+    - target: {fileID: 8253068718313110965, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
+      propertyPath: SliderSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2537283084365906612, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
 --- !u!1 &476008205
 GameObject:
@@ -777,15 +786,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &714081003 stripped
+--- !u!114 &714081009 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2537283084365906612, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8253068718313110965, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
   m_PrefabInstance: {fileID: 351708080}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db0da37c267ac4b48bc3f647641160c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e2af61d865f40b0814be65a15f3cd72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &784981401
@@ -1732,7 +1741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -249.8536, y: -310.1941}
+  scrollPos: {x: -465.7074, y: -247.99893}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 485.8
@@ -1743,8 +1752,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1340448186}
+  selectedCommands:
+  - {fileID: 1340448369}
   variables:
   - {fileID: 1340448133}
   - {fileID: 1340448164}
@@ -9895,7 +9906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4a884ea30d4777b0923e74b1dfe400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slidingFight: {fileID: 714081003}
+  _slidingFight: {fileID: 714081009}
   _lizardEnemy: {fileID: 11400000, guid: 1acb734f6d654ed49867e5d42a245923, type: 2}
   _lizardGeneralEnemy: {fileID: 11400000, guid: 676f0b30620164a4299bca97a1069b81, type: 2}
 --- !u!4 &1656907866

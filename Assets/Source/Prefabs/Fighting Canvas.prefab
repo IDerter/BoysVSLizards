@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 2537283084365906604}
   - component: {fileID: 2537283084365906603}
   - component: {fileID: 2537283084365906607}
-  - component: {fileID: 2537283084365906612}
+  - component: {fileID: 8253068718313110965}
   m_Layer: 0
   m_Name: Fighting Canvas
   m_TagString: Untagged
@@ -477,7 +477,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &2537283084365906612
+--- !u!114 &8253068718313110965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2537283084365906601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db0da37c267ac4b48bc3f647641160c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e2af61d865f40b0814be65a15f3cd72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LeftBorder: {fileID: 2537283084930938684}
@@ -496,8 +496,8 @@ MonoBehaviour:
   LeftStopper: {fileID: 2537283084743615147}
   CenterHitPart: {fileID: 2537283084511296501}
   CloseSideParts:
-  - {fileID: 2537283085328993114}
   - {fileID: 2537283084870265119}
+  - {fileID: 2537283085328993114}
   FarSideParts:
   - {fileID: 2537283084515971036}
   - {fileID: 2537283085044532217}
@@ -505,12 +505,10 @@ MonoBehaviour:
   EnemyForegroundHealthBar: {fileID: 2537283084742156595}
   PlayerForegroundHealthBar: {fileID: 2537283084577299040}
   EnemyImage: {fileID: 2537283084730539727}
-  DamageOfPlayer: 0.15
-  DamageOfEnemy: 0.33
-  SliderSpeed: 1
-  DetectableDistance: 0
-  Fungusint:
-    variable: {fileID: 0}
+  _playerDamage: 1
+  SliderSpeed: 0
+  DetectableDistance: 0.7
+  _flowchart: {fileID: 0}
 --- !u!1 &2537283084511296501
 GameObject:
   m_ObjectHideFlags: 0
