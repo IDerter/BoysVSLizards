@@ -121,10 +121,12 @@ namespace BoysVsLizards
         }
         private void GetClick()
         {
+
             bool HitEnemy = false;
             if (Mathf.Abs(CenterHitPart.transform.position.x - SlidingBar.transform.position.x) < 0.7f)
             {
                 HitEnemy = true;
+                Debug.Log("Apply Damage1!");
                 ApplyDamageToEnemy(DamageOfPlayer * 2f);
             }
             else
@@ -134,6 +136,7 @@ namespace BoysVsLizards
                     if (Mathf.Abs(CloseSideParts[i].transform.position.x - SlidingBar.transform.position.x) < 0.7f)
                     {
                         HitEnemy = true;
+                        Debug.Log("Apply Damage2!");
                         ApplyDamageToEnemy(DamageOfPlayer);
                     }
                 }
