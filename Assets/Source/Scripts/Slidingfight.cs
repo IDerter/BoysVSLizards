@@ -12,11 +12,11 @@ namespace BoysVsLizards
         [SerializeField] private GameObject[] CloseSideParts, FarSideParts;
         [SerializeField] private GameObject ClickRegisterButton;
         [SerializeField] private Image EnemyForegroundHealthBar, PlayerForegroundHealthBar, EnemyImage;
-        public float DamageOfPlayer = 0.15f, DamageOfEnemy = 0.33f;
+        [SerializeField] private float DamageOfPlayer = 0.15f, DamageOfEnemy = 0.33f;
         private Color ChangingColor;
         private bool EnemyWasHit = false;
         private CanvasGroup FightCanvasCG;
-        [SerializeField] private float SliderSpeed;
+        [SerializeField] private float SliderSpeed, DetectableDistance;
         [SerializeField] VariableReference Fungusint;
 
         private bool GoRight = true;
@@ -123,7 +123,9 @@ namespace BoysVsLizards
         {
 
             bool HitEnemy = false;
-            if (Mathf.Abs(CenterHitPart.transform.position.x - SlidingBar.transform.position.x) < 0.7f)
+
+            if (Mathf.Abs(CenterHitPart.transform.position.x - SlidingBar.transform.position.x) < DetectableDistance)
+
             {
                 HitEnemy = true;
                 Debug.Log("Apply Damage1!");
@@ -133,7 +135,7 @@ namespace BoysVsLizards
             {
                 for (int i = 0; i < CloseSideParts.Length; i++)
                 {
-                    if (Mathf.Abs(CloseSideParts[i].transform.position.x - SlidingBar.transform.position.x) < 0.7f)
+                    if (Mathf.Abs(CloseSideParts[i].transform.position.x - SlidingBar.transform.position.x) < DetectableDistance)
                     {
                         HitEnemy = true;
                         Debug.Log("Apply Damage2!");
@@ -142,7 +144,7 @@ namespace BoysVsLizards
                 }
                 for (int i = 0; i < FarSideParts.Length; i++)
                 {
-                    if (Mathf.Abs(FarSideParts[i].transform.position.x - SlidingBar.transform.position.x) < 0.7f)
+                    if (Mathf.Abs(FarSideParts[i].transform.position.x - SlidingBar.transform.position.x) < DetectableDistance)
                     {
                         HitEnemy = true;
                         ApplyDamageToEnemy(DamageOfPlayer / 2);
