@@ -5,32 +5,47 @@ using UnityEngine.UI;
 
 namespace BoysVsLizards
 {
-    public class Slidingfight : MonoBehaviour
+    public class SlidingFight : MonoBehaviour
     {
         [SerializeField] GameObject LeftBorder, RightBorder, SlidingBar, RightStopper, LeftStopper, CenterHitPart;
         private bool Attack = false;
         [SerializeField] private GameObject[] CloseSideParts, FarSideParts;
         [SerializeField] private GameObject ClickRegisterButton;
         [SerializeField] private Image EnemyForegroundHealthBar, PlayerForegroundHealthBar, EnemyImage;
-        [SerializeField] private float DamageOfPlayer = 0.15f, DamageOfEnemy = 0.33f;
+        [SerializeField] private int _playerDamage = 1;
         private Color ChangingColor;
         private bool EnemyWasHit = false;
         private CanvasGroup FightCanvasCG;
         [SerializeField] private float SliderSpeed, DetectableDistance;
-        [SerializeField] VariableReference Fungusint;
-
+        // [SerializeField] VariableReference Fungusint;
+        [SerializeField] private Flowchart _flowchart;
+        
         private bool GoRight = true;
+        private float _enemyHealth;
+        private float _currentEnemyHealth;
+        private float _currentHealth;
+        private float _health;
+        private float _enemyDamage;
+        private string _victoryBlockName, _loseBlockName;
+
+        public void Init(float enemyHealth, float enemyDamage, string victoryBlockName, string loseBlockName)
+        {
+            _health = 10f;
+            _currentHealth = _health;
+            _enemyHealth = enemyHealth;
+            _currentEnemyHealth = _enemyHealth;
+            _enemyDamage = enemyDamage;
+            _victoryBlockName = victoryBlockName;
+            _loseBlockName = loseBlockName;
+            PlayerForegroundHealthBar.fillAmount = 1f;
+            EnemyForegroundHealthBar.fillAmount = 1f;
+            StartTheFight();
+        }
 
         private void Start()
         {
             FightCanvasCG = GetComponent<CanvasGroup>();
             ChangingColor = EnemyImage.GetComponent<Image>().color;
-        }
-        
-        private void Reload()
-        {
-            EnemyForegroundHealthBar.fillAmount = 1f;
-            PlayerForegroundHealthBar.fillAmount = 1f;
         }
         private void Update()
         {
@@ -53,41 +68,48 @@ namespace BoysVsLizards
                 HandleMovement();
                 if (Input.GetMouseButtonDown(0))
                 {
-                    Debug.Log("Attack");
                     GetClick();
                 }
             }
         }
         private IEnumerator FadeInCanvas()
         {
-            if (FightCanvasCG.alpha >= 1f)
-                StopAllCoroutines();
-            FightCanvasCG.alpha += 0.01f;
-            yield return new WaitForSecondsRealtime(0.01f);
-            yield return FadeInCanvas();
+            // if (FightCanvasCG.alpha >= 1f)
+            //     StopAllCoroutines();
+            while (FightCanvasCG.alpha < 1f)
+            {
+                FightCanvasCG.alpha += 0.01f;
+                yield return new WaitForSecondsRealtime(0.01f);
+            }
+
+            yield return null;
         }
         private IEnumerator FadeOutCanvas()
         {
-            if (FightCanvasCG.alpha <= 0f)
+            while (FightCanvasCG.alpha > 0f)
             {
-                StopAllCoroutines();
+                FightCanvasCG.alpha -= 0.01f;
+                yield return new WaitForSecondsRealtime(0.01f); 
             }
-            FightCanvasCG.alpha -= 0.01f;
-            yield return new WaitForSecondsRealtime(0.01f);
-            yield return FadeOutCanvas();
+
+            StopAllCoroutines();
+            gameObject.SetActive(false);
+            yield return null;
         }
         private void Break()
         {
-            StopAllCoroutines();
-            Attack = false;
-            StartCoroutine(FadeOutCanvas());
+            // StopAllCoroutines();
+            // Attack = false;
+            // StartCoroutine(FadeOutCanvas());
         }
+
         public void StartTheFight()
         {
             StopAllCoroutines();
             Attack = true;
             StartCoroutine(FadeInCanvas());
         }
+
         private void HandleMovement()
         {
             Vector3 TargetPos;
@@ -109,23 +131,22 @@ namespace BoysVsLizards
             }
             SlidingBar.transform.position = Vector3.Lerp(SlidingBar.transform.position, TargetPos, SliderSpeed * Time.deltaTime);
         }
-        public void ApplyDamageToPlayer()
+
+        private void ApplyDamageToEnemy(float damage)
         {
-            PlayerForegroundHealthBar.GetComponent<Image>().fillAmount -= DamageOfEnemy;
-        }
-        private void ApplyDamageToEnemy(float Damage)
-        {
-            EnemyForegroundHealthBar.fillAmount -= Damage;
-            if (EnemyForegroundHealthBar.fillAmount <= 0f)
+            _currentEnemyHealth -= damage;
+            EnemyForegroundHealthBar.fillAmount = _currentEnemyHealth / _enemyHealth;
+            Debug.Log(damage);
+            Debug.Log(EnemyForegroundHealthBar.fillAmount);
+
+            if (_currentEnemyHealth <= 0f)
             {
-                Fungusint.Set<int>(1);//killed
-                EnemyWasHit = true;
-                Attack = false;
+                Victory();
             }
-            else
-                Fungusint.Set<int>(0);//hit
+
             Break();
         }
+
         private void GetClick()
         {
 
@@ -136,7 +157,7 @@ namespace BoysVsLizards
             {
                 HitEnemy = true;
                 Debug.Log("Apply Damage1!");
-                ApplyDamageToEnemy(DamageOfPlayer * 2f);
+                ApplyDamageToEnemy(_enemyDamage * 2);
             }
             else
             {
@@ -146,7 +167,7 @@ namespace BoysVsLizards
                     {
                         HitEnemy = true;
                         Debug.Log("Apply Damage2!");
-                        ApplyDamageToEnemy(DamageOfPlayer);
+                        ApplyDamageToEnemy(_enemyDamage);
                     }
                 }
                 for (int i = 0; i < FarSideParts.Length; i++)
@@ -154,19 +175,49 @@ namespace BoysVsLizards
                     if (Mathf.Abs(FarSideParts[i].transform.position.x - SlidingBar.transform.position.x) < DetectableDistance)
                     {
                         HitEnemy = true;
-                        ApplyDamageToEnemy(DamageOfPlayer / 2);
+                        ApplyDamageToEnemy(_enemyDamage / 2f);
                     }
                 }
             }
             if (!HitEnemy)
             {
-                Attack = false;
-                StopAllCoroutines();
-                StartCoroutine(FadeOutCanvas());
-                Fungusint.Set<int>(2);//We got hit
+                PlayerHit();
             }
             ClickRegisterButton.GetComponent<Button>().onClick.Invoke();
             HitEnemy = false;
+        }
+
+        private void Victory()
+        {
+            _flowchart.ExecuteBlock(_victoryBlockName);
+            EnemyWasHit = true;
+            Attack = false;
+            EndBattle();
+        }
+
+        private void PlayerHit()
+        {
+            _currentHealth -= _enemyDamage;
+            PlayerForegroundHealthBar.fillAmount = _currentHealth / _health;
+
+            if (_currentHealth <= 0)
+            {
+                Lose();
+            }
+        }
+
+        private void Lose()
+        {
+            _flowchart.ExecuteBlock(_loseBlockName);
+            EnemyWasHit = true;
+            Attack = false;
+            EndBattle();
+        }
+
+        private void EndBattle()
+        {
+            StopAllCoroutines();
+            StartCoroutine(FadeOutCanvas());
         }
     }
 }
