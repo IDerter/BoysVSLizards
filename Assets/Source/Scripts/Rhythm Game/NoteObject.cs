@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,24 @@ namespace BoysVsLizards
         [SerializeField] private bool _canPressed;
 
         [SerializeField] private KeyCode _keyToPress;
+        private Animator _arrowAnimator;
 
         private void Start()
         {
             _beatTemp /= 60f;
+            _arrowAnimator = GetComponent<Animator>();
+            SpawnerArrows.Instance.EndMusicBattle += EndMusicBattle;
         }
 
+        private void OnDestroy()
+        {
+            SpawnerArrows.Instance.EndMusicBattle -= EndMusicBattle;
+        }
+
+        private void EndMusicBattle()
+        {
+            _arrowAnimator.enabled = true;
+        }
 
         private void Update()
         {
@@ -26,10 +39,11 @@ namespace BoysVsLizards
                 if (_canPressed)
                 {
                     _canPressed = false;
-                    gameObject.SetActive(false);
+                    _arrowAnimator.enabled = true;
 
                     MusicController.Instance.NoteHit();
                 }
+
             }
         }
 
@@ -39,6 +53,8 @@ namespace BoysVsLizards
             if (col.tag == "Activator")
             {
                 _canPressed = true;
+
+                MusicController.Instance.InTrigger = true;
             }
         }
 
@@ -49,7 +65,12 @@ namespace BoysVsLizards
               
                 Debug.Log("Вышел из триггера!");
                 if (_canPressed)
+                {
                     MusicController.Instance.NoteMissed();
+                }
+                _canPressed = false;
+
+                MusicController.Instance.InTrigger = false;
             }
         }
     }
