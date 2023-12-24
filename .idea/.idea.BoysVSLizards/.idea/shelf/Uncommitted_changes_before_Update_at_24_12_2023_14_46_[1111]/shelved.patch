@@ -1,0 +1,15 @@
+Index: .idea/.idea.BoysVSLizards/.idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/encodings.xml b/.idea/.idea.BoysVSLizards/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1703418317182)
++++ b/.idea/.idea.BoysVSLizards/.idea/encodings.xml	(date 1703418317182)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
++</project>
+\ No newline at end of file
