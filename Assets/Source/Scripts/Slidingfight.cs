@@ -134,8 +134,6 @@ namespace BoysVsLizards
         {
             _currentEnemyHealth -= damage;
             EnemyForegroundHealthBar.fillAmount = _currentEnemyHealth / _enemyHealth;
-            Debug.Log(damage);
-            Debug.Log(EnemyForegroundHealthBar.fillAmount);
 
             if (_currentEnemyHealth <= 0f)
             {
