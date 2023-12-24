@@ -24,7 +24,7 @@ namespace BoysVsLizards
                 else
                 {
                     EndMusicBattle?.Invoke();
-                    gameObject.SetActive(false);
+                    gameObject.GetComponent<SpawnerArrows>().enabled = false;
                 }
 
                 if (_timer >= 0)
@@ -40,7 +40,7 @@ namespace BoysVsLizards
                     rotate.z = 90 * coefAngle;
                     obj.transform.rotation = Quaternion.Euler(rotate);
 
-                    _timer = UnityEngine.Random.Range(0.35f, 0.8f);
+                    _timer = UnityEngine.Random.Range(0.5f, 1f);
                 }
             }
         }

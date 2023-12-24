@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace BoysVsLizards
 {
-    public class ButtonController : MonoBehaviour
+    public class ButtonController : SingletonBase<ButtonController>
     {
+        public event Action ButtonPressed;
+
         private SpriteRenderer _theSR;
 
         [SerializeField] private Sprite _defaultImage;
@@ -23,6 +26,8 @@ namespace BoysVsLizards
             if (Input.GetKeyDown(_keyToPress))
             {
                 _theSR.sprite = _pressedImage;
+                Debug.Log("TestPress");
+                ButtonPressed?.Invoke();
             }
 
             if (Input.GetKeyUp(_keyToPress))
