@@ -74,8 +74,6 @@ namespace BoysVsLizards
         }
         private IEnumerator FadeInCanvas()
         {
-            // if (FightCanvasCG.alpha >= 1f)
-            //     StopAllCoroutines();
             while (FightCanvasCG.alpha < 1f)
             {
                 FightCanvasCG.alpha += 0.01f;
