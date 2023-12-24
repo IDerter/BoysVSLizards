@@ -1,0 +1,30 @@
+Index: Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta
+===================================================================
+diff --git a/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta b/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta
+deleted file mode 100644
+--- a/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta	(revision 4f03de927d0a7f398afdf8295e1e4445851537f2)
++++ /dev/null	(revision 4f03de927d0a7f398afdf8295e1e4445851537f2)
+@@ -1,8 +0,0 @@
+-fileFormatVersion: 2
+-guid: fd02c799f3f5c4c83b2fc26c105a3821
+-timeCreated: 1453725747
+-licenseType: Free
+-DefaultImporter:
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta
+===================================================================
+diff --git a/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta b/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta
+deleted file mode 100644
+--- a/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta	(revision 4f03de927d0a7f398afdf8295e1e4445851537f2)
++++ /dev/null	(revision 4f03de927d0a7f398afdf8295e1e4445851537f2)
+@@ -1,8 +0,0 @@
+-fileFormatVersion: 2
+-guid: 81dbcde0f90df4e9ba9ca2794490e57a
+-timeCreated: 1491251885
+-licenseType: Free
+-DefaultImporter:
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 

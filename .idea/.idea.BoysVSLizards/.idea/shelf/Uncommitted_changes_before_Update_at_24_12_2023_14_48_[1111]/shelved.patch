@@ -1,0 +1,104 @@
+Index: .idea/.idea.BoysVSLizards/.idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/encodings.xml b/.idea/.idea.BoysVSLizards/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1703418381557)
++++ b/.idea/.idea.BoysVSLizards/.idea/encodings.xml	(date 1703418381557)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
++</project>
+\ No newline at end of file
+Index: .idea/.idea.BoysVSLizards/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/workspace.xml b/.idea/.idea.BoysVSLizards/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1703418350949)
++++ b/.idea/.idea.BoysVSLizards/.idea/workspace.xml	(date 1703418350949)
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
++    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
++      <option name="allowRunningInParallel" value="false" />
++      <option name="listenPortForConnections" value="false" />
++      <option name="pid" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <method v="2" />
++    </configuration>
++    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
++      <option name="allowRunningInParallel" value="false" />
++      <option name="listenPortForConnections" value="false" />
++      <option name="pid" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <method v="2" />
++    </configuration>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.BoysVSLizards/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/vcs.xml b/.idea/.idea.BoysVSLizards/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1703418350977)
++++ b/.idea/.idea.BoysVSLizards/.idea/vcs.xml	(date 1703418350977)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.BoysVSLizards/.idea/indexLayout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/indexLayout.xml b/.idea/.idea.BoysVSLizards/.idea/indexLayout.xml
+new file mode 100644
+--- /dev/null	(date 1703418350990)
++++ b/.idea/.idea.BoysVSLizards/.idea/indexLayout.xml	(date 1703418350990)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="UserContentModel">
++    <attachedFolders />
++    <explicitIncludes />
++    <explicitExcludes />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml b/.idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml
+new file mode 100644
+--- /dev/null	(date 1703418351006)
++++ b/.idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml	(date 1703418351006)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RiderProjectSettingsUpdater">
++    <option name="vcsConfiguration" value="2" />
++  </component>
++</project>
+\ No newline at end of file
