@@ -122,7 +122,6 @@ namespace BoysVsLizards
         private void GetClick()
         {
             bool HitEnemy = false;
-            Debug.Log(CenterHitPart.transform.position.x - SlidingBar.transform.position.x);
             if (Mathf.Abs(CenterHitPart.transform.position.x - SlidingBar.transform.position.x) < 0.7f)
             {
                 HitEnemy = true;
