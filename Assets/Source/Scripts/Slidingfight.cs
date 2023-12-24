@@ -12,11 +12,11 @@ namespace BoysVsLizards
         [SerializeField] private GameObject[] CloseSideParts, FarSideParts;
         [SerializeField] private GameObject ClickRegisterButton;
         [SerializeField] private Image EnemyForegroundHealthBar, PlayerForegroundHealthBar, EnemyImage;
-        public float DamageOfPlayer = 0.15f, DamageOfEnemy = 0.33f;
+        [SerializeField] private float DamageOfPlayer = 0.15f, DamageOfEnemy = 0.33f;
         private Color ChangingColor;
         private bool EnemyWasHit = false;
         private CanvasGroup FightCanvasCG;
-        [SerializeField] private float SliderSpeed;
+        [SerializeField] private float SliderSpeed, DetectableDistance;
         [SerializeField] VariableReference Fungusint;
 
         private bool GoRight = true;
@@ -122,8 +122,7 @@ namespace BoysVsLizards
         private void GetClick()
         {
             bool HitEnemy = false;
-            Debug.Log(CenterHitPart.transform.position.x - SlidingBar.transform.position.x);
-            if (Mathf.Abs(CenterHitPart.transform.position.x - SlidingBar.transform.position.x) < 0.7f)
+            if (Mathf.Abs(CenterHitPart.transform.position.x - SlidingBar.transform.position.x) < DetectableDistance)
             {
                 HitEnemy = true;
                 ApplyDamageToEnemy(DamageOfPlayer * 2f);
@@ -132,7 +131,7 @@ namespace BoysVsLizards
             {
                 for (int i = 0; i < CloseSideParts.Length; i++)
                 {
-                    if (Mathf.Abs(CloseSideParts[i].transform.position.x - SlidingBar.transform.position.x) < 0.7f)
+                    if (Mathf.Abs(CloseSideParts[i].transform.position.x - SlidingBar.transform.position.x) < DetectableDistance)
                     {
                         HitEnemy = true;
                         ApplyDamageToEnemy(DamageOfPlayer);
@@ -140,7 +139,7 @@ namespace BoysVsLizards
                 }
                 for (int i = 0; i < FarSideParts.Length; i++)
                 {
-                    if (Mathf.Abs(FarSideParts[i].transform.position.x - SlidingBar.transform.position.x) < 0.7f)
+                    if (Mathf.Abs(FarSideParts[i].transform.position.x - SlidingBar.transform.position.x) < DetectableDistance)
                     {
                         HitEnemy = true;
                         ApplyDamageToEnemy(DamageOfPlayer / 2);
