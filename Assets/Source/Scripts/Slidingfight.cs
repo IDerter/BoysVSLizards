@@ -26,6 +26,12 @@ namespace BoysVsLizards
             FightCanvasCG = GetComponent<CanvasGroup>();
             ChangingColor = EnemyImage.GetComponent<Image>().color;
         }
+        
+        private void Reload()
+        {
+            EnemyForegroundHealthBar.fillAmount = 1f;
+            PlayerForegroundHealthBar.fillAmount = 1f;
+        }
         private void Update()
         {
             if (EnemyWasHit)
@@ -47,6 +53,7 @@ namespace BoysVsLizards
                 HandleMovement();
                 if (Input.GetMouseButtonDown(0))
                 {
+                    Debug.Log("Attack");
                     GetClick();
                 }
             }
