@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 namespace BoysVsLizards
 {
-    public class SlidingFight : MonoBehaviour
+    public class Slidingfight : MonoBehaviour
     {
         [SerializeField] GameObject LeftBorder, RightBorder, SlidingBar, RightStopper, LeftStopper, CenterHitPart;
         private bool Attack = false;
         [SerializeField] private GameObject[] CloseSideParts, FarSideParts;
-        [SerializeField] private GameObject ClickRegisterButton, FlowChart;
+        [SerializeField] private GameObject ClickRegisterButton;
         [SerializeField] private Image EnemyForegroundHealthBar, PlayerForegroundHealthBar, EnemyImage;
         public float DamageOfPlayer = 0.15f, DamageOfEnemy = 0.33f;
         private Color ChangingColor;
@@ -92,7 +92,7 @@ namespace BoysVsLizards
                     GoRight = false;
                 }
             }
-            else 
+            else
             {
                 TargetPos = LeftBorder.transform.position;
                 if (SlidingBar.transform.position.x < LeftStopper.transform.position.x)
@@ -122,6 +122,7 @@ namespace BoysVsLizards
         private void GetClick()
         {
             bool HitEnemy = false;
+            Debug.Log(CenterHitPart.transform.position.x - SlidingBar.transform.position.x);
             if (Mathf.Abs(CenterHitPart.transform.position.x - SlidingBar.transform.position.x) < 0.7f)
             {
                 HitEnemy = true;
