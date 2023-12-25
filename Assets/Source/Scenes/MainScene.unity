@@ -533,7 +533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2537283084743615148, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 7.420166
+      value: 7.420288
       objectReference: {fileID: 0}
     - target: {fileID: 2537283084743615148, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -548,6 +548,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8253068718313110965, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
+      propertyPath: _music
+      value: 
+      objectReference: {fileID: 8300000, guid: 39bd2d15b8edb9b41a526fb151e974af, type: 3}
+    - target: {fileID: 8253068718313110965, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
       propertyPath: _flowchart
       value: 
       objectReference: {fileID: 1340447976}
@@ -555,6 +559,10 @@ PrefabInstance:
       propertyPath: SliderSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8253068718313110965, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 732186236}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 01392ca5af9f3b649b5dc0c206803d5e, type: 3}
@@ -1202,6 +1210,134 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &732186235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732186237}
+  - component: {fileID: 732186236}
+  m_Layer: 0
+  m_Name: MusicSourse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &732186236
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732186235}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 574.2709
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &732186237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732186235}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 534, y: 284, z: -3.672025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &784981401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2902,7 +3038,34 @@ GameObject:
   - component: {fileID: 1340448908}
   - component: {fileID: 1340448911}
   - component: {fileID: 1340448910}
+  - component: {fileID: 1340448913}
   - component: {fileID: 1340448912}
+  - component: {fileID: 1340448916}
+  - component: {fileID: 1340448915}
+  - component: {fileID: 1340448914}
+  - component: {fileID: 1340448920}
+  - component: {fileID: 1340448919}
+  - component: {fileID: 1340448918}
+  - component: {fileID: 1340448921}
+  - component: {fileID: 1340448922}
+  - component: {fileID: 1340448923}
+  - component: {fileID: 1340448925}
+  - component: {fileID: 1340448924}
+  - component: {fileID: 1340448929}
+  - component: {fileID: 1340448928}
+  - component: {fileID: 1340448927}
+  - component: {fileID: 1340448931}
+  - component: {fileID: 1340448930}
+  - component: {fileID: 1340448933}
+  - component: {fileID: 1340448934}
+  - component: {fileID: 1340448935}
+  - component: {fileID: 1340448937}
+  - component: {fileID: 1340448936}
+  - component: {fileID: 1340448938}
+  - component: {fileID: 1340448940}
+  - component: {fileID: 1340448939}
+  - component: {fileID: 1340448942}
+  - component: {fileID: 1340448941}
   m_Layer: 0
   m_Name: MainFlowchart
   m_TagString: Untagged
@@ -2953,7 +3116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1594.2356
     y: 540.69275
-    width: 77.58621
+    width: 78.42106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2984,11 +3147,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -986.91736, y: 397.65878}
+  scrollPos: {x: 198.30336, y: -1471.8069}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.5799999
+  zoom: 0.7599998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2996,8 +3159,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1340448812}
-  selectedCommands: []
+  - {fileID: 1340448567}
+  selectedCommands:
+  - {fileID: 1340448941}
   variables:
   - {fileID: 1340448133}
   - {fileID: 1340448164}
@@ -3157,7 +3321,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1139.4374
     y: 564.72095
-    width: 124.482765
+    width: 127.89476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3189,7 +3353,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1376.4386
     y: 564.72095
-    width: 153.44829
+    width: 159.47372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3706,7 +3870,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1053.4364
     y: 716.71796
-    width: 69.31035
+    width: 70.00001
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3737,7 +3901,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1289.4397
     y: 713.718
-    width: 76.2069
+    width: 77.36843
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3845,7 +4009,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1177.4382
     y: 648.71906
-    width: 141.03448
+    width: 146.84213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4076,7 +4240,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -715.6387
     y: 677.069
-    width: 227.93106
+    width: 235.26321
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4195,7 +4359,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -211.75024
     y: 675.4344
-    width: 214.13795
+    width: 220.52637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4503,7 +4667,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -455.9562
     y: 578.14484
-    width: 214.13795
+    width: 222.63162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4566,7 +4730,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -448.44586
     y: 496.42563
-    width: 194.8276
+    width: 201.579
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4622,7 +4786,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -447.02466
     y: 403.84702
-    width: 186.55174
+    width: 195.2632
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4650,7 +4814,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -413.89944
     y: 219.96046
-    width: 113.44829
+    width: 115.263176
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4705,7 +4869,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -433.87448
     y: 300.48294
-    width: 158.96553
+    width: 165.7895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4770,7 +4934,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -856.873
     y: 1446.237
-    width: 103.793106
+    width: 105.78949
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4987,7 +5151,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -886.8739
     y: 1290.5785
-    width: 156.20691
+    width: 161.57898
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5047,7 +5211,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -174.19626
     y: 1013.214
-    width: 145.17242
+    width: 148.94739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5258,7 +5422,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -215.41737
     y: 916.9947
-    width: 222.41382
+    width: 231.05267
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5581,7 +5745,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -513.8394
     y: 1165.9094
-    width: 101.034485
+    width: 103.68422
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5783,7 +5947,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -871.99146
     y: 1164.7329
-    width: 125.862076
+    width: 128.94739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5977,7 +6141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -720.5625
     y: 1069.0175
-    width: 197.58623
+    width: 205.78952
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6152,7 +6316,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -693.20874
     y: 921.2905
-    width: 174.13794
+    width: 182.6316
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6327,7 +6491,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -708.0717
     y: 797.0517
-    width: 211.37933
+    width: 220.52637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6528,7 +6692,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -208.46497
     y: 795.5143
-    width: 210.00002
+    width: 218.4211
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6679,9 +6843,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1051.744
-    y: 589.31006
-    width: 94.13794
+    x: 782.31244
+    y: 258.37918
+    width: 96.3158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6689,12 +6853,15 @@ MonoBehaviour:
   blockName: Battle_1
   description: "\u0415\u0441\u043B\u0438 \u0432\u044B\u0438\u0433\u0440\u0430\u043B\u0438
     - \u0432\u044B\u0437\u044B\u0432\u0430\u0435\u043C \u0431\u043B\u043E\u043A -
-    garage_battle_lizards_finish\n\u0415\u0441\u043B\u0438 \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B\u0438
+    garage_battle_kirpich\n\u0415\u0441\u043B\u0438 \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B\u0438
     - \u0432\u044B\u0437\u044B\u0432\u0430\u0435\u043C \u0435\u0449\u0435 \u0440\u0430\u0437
     \u0431\u043B\u043E\u043A  garage_battle_lizards"
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1340448930}
+  - {fileID: 1340448916}
   - {fileID: 1340448369}
+  - {fileID: 1340448919}
   suppressAllAutoSelections: 0
 --- !u!114 &1340448191
 MonoBehaviour:
@@ -6770,7 +6937,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1518.7402
     y: -248.16945
-    width: 183.79312
+    width: 190.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6779,6 +6946,8 @@ MonoBehaviour:
   description: "\u041C\u043E\u043D\u043E\u043B\u043E\u0433 \u0413\u0413"
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1340448934}
+  - {fileID: 1340448931}
   - {fileID: 1340448191}
   - {fileID: 1340448393}
   - {fileID: 1340448201}
@@ -6952,7 +7121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 253
   indentLevel: 0
-  storyText: "\u0412\u0438\u0434 \u043A\u0430\u043A-\u0431\u0443\u0434\u0442\u043E
+  storyText: "\u0412\u0438\u0434 \u043A\u0430\u043A \u0431\u0443\u0434\u0442\u043E
     \u0438\u0437 \u043C\u043E\u0435\u0433\u043E \u043E\u043A\u043D\u0430"
   description: 
   character: {fileID: 1146197578}
@@ -7010,7 +7179,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1786.1936
     y: 347.97806
-    width: 200.34485
+    width: 207.89478
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7058,7 +7227,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1260.078
     y: 350.1749
-    width: 194.8276
+    width: 203.68425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7157,7 +7326,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1513.3395
     y: -101.46795
-    width: 194.8276
+    width: 202.63162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7544,7 +7713,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1792.2675
     y: -20.822634
-    width: 196.20691
+    width: 204.73688
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7710,7 +7879,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1253.605
     y: -11.828765
-    width: 197.58623
+    width: 206.84215
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7872,7 +8041,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1505.6687
     y: 61.09665
-    width: 211.37933
+    width: 219.47372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8256,7 +8425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 322
   indentLevel: 0
-  storyText: "\u042D\u0439, \u0440\u0430\u0437\u043E\u0439\u0442\u0438\u0441\u044C
+  storyText: "\u042D\u0439, \u0440\u0430\u0437\u043E\u0439\u0442\u0438\u0441\u044C,
     \u0441\u043A\u043E\u0440\u043B\u0443\u043F\u0430!"
   description: 
   character: {fileID: 784981403}
@@ -8989,9 +9158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1273.8824
-    y: 560.3807
-    width: 165.86209
+    x: 1276.514
+    y: 476.17007
+    width: 173.15793
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9000,8 +9169,10 @@ MonoBehaviour:
   description: "\u0411\u043E\u0439 \u0441 \u044F\u0449\u0435\u0440\u0430\u043C\u0438
     \u0443 \u043D\u0438\u0445 \u043D\u0430 \u0431\u0430\u0437\u0435(\u0433\u0430\u0440\u0430\u0436\u0438)
     \u0432 \u043A\u0440\u044B\u0441\u0443"
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1340448935}
   commandList:
+  - {fileID: 1340448937}
+  - {fileID: 1340448936}
   - {fileID: 1340448432}
   - {fileID: 1340448357}
   - {fileID: 1340448355}
@@ -9580,8 +9751,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 1262.7998
-    y: 673.9409
-    width: 200.34485
+    y: 672.0178
+    width: 210.00005
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9591,6 +9762,9 @@ MonoBehaviour:
     \u044F\u0449\u0435\u0440\u0430\u043C\u0438"
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1340448918}
+  - {fileID: 1340448938}
+  - {fileID: 1340448920}
   - {fileID: 1340448395}
   - {fileID: 1340448411}
   - {fileID: 1340448347}
@@ -10062,43 +10236,9 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BattleController
-  targetMethod: StartLizardBattle
-  targetMethodText: 'StartLizardBattle (String, String): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.String
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: garage_battle_lizards_finish
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  - objValue:
-      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.String
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: garage_battle_lizards
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
+  targetMethod: InitMusic
+  targetMethodText: 'InitMusic (): Void'
+  methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
   returnValueType: System.Void
@@ -10141,7 +10281,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1783.9277
     y: 561.1834
-    width: 214.13795
+    width: 222.63162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10849,7 +10989,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1476.4253
     y: 790.58264
-    width: 227.93106
+    width: 237.36847
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10908,7 +11048,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1002.56433
     y: 790.5826
-    width: 226.55174
+    width: 236.31584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10922,9 +11062,11 @@ MonoBehaviour:
   - {fileID: 1340448908}
   - {fileID: 1340448907}
   - {fileID: 1340448437}
+  - {fileID: 1340448940}
   - {fileID: 1340448405}
   - {fileID: 1340448404}
   - {fileID: 1340448403}
+  - {fileID: 1340448939}
   - {fileID: 1340448436}
   - {fileID: 1340448402}
   - {fileID: 1340448420}
@@ -10948,7 +11090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 452
   indentLevel: 0
-  storyText: "\u0423\u0445\u043E\u0434\u0438\u043C \u043F\u0430\u0446\u0430\u043D\u044B!"
+  storyText: "\u0423\u0445\u043E\u0434\u0438\u043C, \u043F\u0430\u0446\u0430\u043D\u044B!"
   description: 
   character: {fileID: 1734996391}
   portrait: {fileID: 0}
@@ -10977,7 +11119,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "(\u043E\u0431\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F \u043A
     \u0413\u041F) \u0417\u0430\u0431\u0438\u0440\u0430\u0439 \u0441\u0432\u043E\u0438\u0445
-    \u043E\u0442\u0431\u0440\u043E\u0441\u043E\u0432 \u0438 \u0432\u0430\u043B\u0438\u0442\u0435
+    \u043E\u0442\u0431\u0440\u043E\u0441\u043E\u0432, \u0438 \u0432\u0430\u043B\u0438\u0442\u0435
     \u043E\u0442\u0441\u044E\u0434\u0430 \u043F\u043E\u043A\u0430 \u043D\u0435 \u0443\u0431\u0438\u043B!"
   description: 
   character: {fileID: 479228862}
@@ -11005,7 +11147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 450
   indentLevel: 0
-  storyText: "\u0411\u043E\u043A\u0441\u0451\u0440 \u0433\u043E\u0432\u043E\u0440\u0438\u0448\u044C.
+  storyText: "\u0411\u043E\u043A\u0441\u0451\u0440, \u0433\u043E\u0432\u043E\u0440\u0438\u0448\u044C?
     \u041D\u0438 \u0440\u0430\u0437\u0443 \u043D\u0435 \u0432\u0438\u0434\u0435\u043B
     \u0442\u0430\u043A\u043E\u0439 \u0441\u0438\u043B\u044B \u0443 \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430,
     \u043D\u043E \u0438 \u0434\u043B\u044F \u044F\u0449\u0435\u0440\u0430 \u0442\u044B
@@ -11799,7 +11941,7 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: 3bedbb3cc9238874caab09cbf6e14455, type: 3}
   offset: 0
   fromPosition: {fileID: 494650168}
-  toPosition: {fileID: 711486229}
+  toPosition: {fileID: 1184947498}
   facing: 0
   useDefaultSettings: 1
   fadeDuration: 0.5
@@ -12430,7 +12572,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 795.0596
     y: 1607.8933
-    width: 105.172424
+    width: 107.89475
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12713,7 +12855,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1292.4171
     y: 1614.2761
-    width: 139.65518
+    width: 145.78949
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12819,7 +12961,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1045.532
     y: 1512.0011
-    width: 127.24139
+    width: 132.10529
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12848,7 +12990,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "\u041A\u0430\u043A\u043E\u0439 \u0436\u0435 \u0442\u044B \u0441\u0432\u043E\u0439,
     \u043A\u0440\u044B\u0441\u043E\u0439 \u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F,
-    \u0430 \u0433\u043E\u0432\u043E\u0440\u0438\u043B \u0447\u0442\u043E \u043F\u0430\u0446\u0430\u043D!"
+    \u0430 \u0433\u043E\u0432\u043E\u0440\u0438\u043B, \u0447\u0442\u043E \u043F\u0430\u0446\u0430\u043D!"
   description: 
   character: {fileID: 497045574}
   portrait: {fileID: 0}
@@ -12932,7 +13074,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1256.2905
     y: 1408.5377
-    width: 107.931046
+    width: 111.05264
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12990,7 +13132,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 775.944
     y: 1413.0715
-    width: 175.51726
+    width: 182.6316
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13159,7 +13301,8 @@ MonoBehaviour:
   itemId: 582
   indentLevel: 0
   storyText: "(\u0432\u044B \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u043C\u043E\u0436\u0435\u0442\u0435
-    \u0441\u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F \u0438 \u043F\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0435\u0441\u044C
+    \u0441\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044C\u0441\u044F \u0438
+    \u043F\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0435\u0441\u044C
     \u0432 \u044F\u0449\u0435\u0440\u0430)"
   description: 
   character: {fileID: 1146197578}
@@ -13218,7 +13361,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "\u041D\u0435 \u0437\u043B\u0438\u0442\u0435 \u041C\u0430\u043A\u0441\u0430,
     \u0430 \u0442\u043E \u0432\u0434\u0440\u0443\u0433 \u043E\u043D \u043F\u0440\u0430\u0432\u0434\u0430
-    \u044F\u0449\u0435\u0440\u043E\u043C \u043E\u0431\u0440\u0430\u0442\u0438\u0442\u044C\u0441\u044F"
+    \u044F\u0449\u0435\u0440\u043E\u043C \u043E\u0431\u0440\u0430\u0442\u0438\u0442\u0441\u044F"
   description: 
   character: {fileID: 497045574}
   portrait: {fileID: 0}
@@ -13307,7 +13450,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1036.8346
     y: 1316.3428
-    width: 149.31036
+    width: 154.21056
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13399,7 +13542,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1297.0004
     y: 1219.2114
-    width: 211.37933
+    width: 218.4211
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13427,7 +13570,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 742.72375
     y: 1214.3335
-    width: 164.48277
+    width: 168.9474
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13692,8 +13835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 999.29114
-    y: 1136.806
+    x: 1001.21423
+    y: 1134.8829
     width: 240
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -13978,8 +14121,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 698.1848
-    y: 1696.1094
-    width: 179.65518
+    y: 1694.7395
+    width: 185.7895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13989,6 +14132,8 @@ MonoBehaviour:
     \u043D\u0430 \u0443\u043B\u0438\u0446\u0435"
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1340448942}
+  - {fileID: 1340448928}
   - {fileID: 1340448549}
   - {fileID: 1340448546}
   suppressAllAutoSelections: 0
@@ -14029,7 +14174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 476.04578
     y: 1723.4762
-    width: 156.20691
+    width: 160.52634
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14042,6 +14187,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1340448548}
+  - {fileID: 1340448929}
   suppressAllAutoSelections: 0
 --- !u!114 &1340448548
 MonoBehaviour:
@@ -14063,43 +14209,9 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BattleController
-  targetMethod: StartBoysBattle
-  targetMethodText: 'StartBoysBattle (String, String): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.String
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: street_battle_with_boys_finish
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  - objValue:
-      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.String
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: street_battle_with_boys
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
+  targetMethod: InitMusic
+  targetMethodText: 'InitMusic (): Void'
+  methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
   returnValueType: System.Void
@@ -14521,9 +14633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 675.90894
-    y: 1842.4121
-    width: 214.13795
+    x: 685.745
+    y: 1840.7727
+    width: 222.63162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14533,6 +14645,8 @@ MonoBehaviour:
     \u043F\u0430\u0446\u0430\u043D\u0430\u043C\u0438"
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1340448941}
+  - {fileID: 1340448927}
   - {fileID: 1340448566}
   - {fileID: 1340448565}
   - {fileID: 1340448561}
@@ -14596,7 +14710,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 936.44727
     y: 2895.875
-    width: 218.27588
+    width: 224.7369
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14646,7 +14760,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 670.3052
     y: 3026.0957
-    width: 117.58621
+    width: 121.578964
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16791,7 +16905,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 355.72568
     y: 2898.8596
-    width: 216.89658
+    width: 223.68425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16901,7 +17015,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 678.4302
     y: 2791.7207
-    width: 143.79312
+    width: 148.94739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16979,7 +17093,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 926.7153
     y: 2673.152
-    width: 219.6552
+    width: 225.78952
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17058,7 +17172,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363.0023
     y: 2671.72
-    width: 218.27588
+    width: 224.7369
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17167,7 +17281,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 684.1443
     y: 2584.582
-    width: 145.17242
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17244,7 +17358,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 942.4298
     y: 2480.298
-    width: 219.6552
+    width: 225.78952
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17322,7 +17436,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 367.28784
     y: 2486.0085
-    width: 218.27588
+    width: 224.7369
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17431,7 +17545,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 708.4304
     y: 2387.4434
-    width: 145.17242
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17510,7 +17624,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 946.7157
     y: 2276.0159
-    width: 218.27588
+    width: 224.7369
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17588,7 +17702,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 375.8592
     y: 2276.0134
-    width: 216.89658
+    width: 223.68425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17738,7 +17852,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 714.22925
     y: 2197.9885
-    width: 143.79312
+    width: 148.94739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17795,7 +17909,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 885.79175
     y: 2112.185
-    width: 216.89658
+    width: 223.68425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17852,7 +17966,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.91675
     y: 2115.176
-    width: 215.51726
+    width: 222.63162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18469,7 +18583,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 709.6117
     y: 1982.4976
-    width: 157.58621
+    width: 161.57898
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18654,7 +18768,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 613.09094
     y: 3259.1345
-    width: 219.6552
+    width: 228.94742
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18747,7 +18861,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 880.5733
     y: 3376.7393
-    width: 158.96553
+    width: 163.68423
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18884,14 +18998,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 419.78268
     y: 3370.5925
-    width: 125.862076
+    width: 130.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 815
   blockName: Choose_drink
   description: 
-  eventHandler: {fileID: 1340448912}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1340448690}
   - {fileID: 1340448689}
@@ -18948,7 +19062,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 553.26886
     y: 3473.8245
-    width: 170.00002
+    width: 176.31583
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19006,7 +19120,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 249.68732
     y: 3475.17
-    width: 142.4138
+    width: 147.89476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19737,7 +19851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 570.90784
     y: 3607.646
-    width: 135.51724
+    width: 139.47371
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20159,7 +20273,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.99449
     y: 3840.767
-    width: 205.86209
+    width: 213.15794
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20307,7 +20421,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 558.9913
     y: 3840.135
-    width: 238.96555
+    width: 240
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20864,7 +20978,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 732.9846
     y: 3703.441
-    width: 215.51726
+    width: 219.47372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20955,7 +21069,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 396.36734
     y: 3709.7703
-    width: 130
+    width: 132.10529
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21027,7 +21141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 209.38683
     y: 3936.6912
-    width: 95.51724
+    width: 97.36844
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21176,7 +21290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -23.888836
     y: 4306.9395
-    width: 120.34483
+    width: 122.6316
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21368,7 +21482,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.19936
     y: 4241.081
-    width: 160.34485
+    width: 165.7895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21448,7 +21562,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 399.64252
     y: 4313.0386
-    width: 132.75864
+    width: 136.31581
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21851,7 +21965,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 318.66687
     y: 4053.275
-    width: 145.17242
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21929,7 +22043,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 43.78868
     y: 4052.0554
-    width: 143.79312
+    width: 148.94739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22366,7 +22480,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -255.44026
     y: 4405.991
-    width: 178.27588
+    width: 182.6316
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22477,7 +22591,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -7.6484337
     y: 4532.315
-    width: 113.44829
+    width: 115.263176
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22667,7 +22781,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -47.38048
     y: 4740.563
-    width: 178.27588
+    width: 185.7895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23163,7 +23277,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 146.91078
     y: 4634.9023
-    width: 179.65518
+    width: 184.73688
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23240,7 +23354,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -246.3065
     y: 4630.3193
-    width: 178.27588
+    width: 183.68425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24618,7 +24732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1031
   indentLevel: 0
-  storyText: "\u042D\u0439, \u0440\u0430\u0437\u043E\u0439\u0442\u0438\u0441\u044C
+  storyText: "\u042D\u0439, \u0440\u0430\u0437\u043E\u0439\u0442\u0438\u0441\u044C,
     \u0441\u043A\u043E\u0440\u043B\u0443\u043F\u0430!"
   description: 
   character: {fileID: 784981403}
@@ -25119,7 +25233,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1803.079
     y: 130.73273
-    width: 197.58623
+    width: 203.68425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25174,7 +25288,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1219.1649
     y: 130.73273
-    width: 196.20691
+    width: 202.63162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25248,7 +25362,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1340448907
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25275,7 +25389,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1340448908
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25305,7 +25419,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1340448909
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25335,7 +25449,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1340448910
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25365,7 +25479,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1340448911
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25395,7 +25509,637 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1340448912
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1063
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1656907864}
+  targetComponentAssemblyName: BoysVsLizards.BattleController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleController
+  targetMethod: StartKirpichLizardBattle
+  targetMethodText: 'StartKirpichLizardBattle (String, String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: garage_battle_lizards_finish
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: garage_battle_lizards_lose
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1340448913
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 554.2861
+    y: 255.7146
+    width: 175.26318
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 1064
+  blockName: garage_battle_kirpich
+  description: "\u0415\u0441\u043B\u0438 \u0432\u044B\u0438\u0433\u0440\u0430\u043B\u0438
+    - \u0432\u044B\u0437\u044B\u0432\u0430\u0435\u043C \u0431\u043B\u043E\u043A -
+    garage_battle_lizards_finish\n\u0415\u0441\u043B\u0438 \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B\u0438
+    - \u0432\u044B\u0437\u044B\u0432\u0430\u0435\u043C \u0435\u0449\u0435 \u0440\u0430\u0437
+    \u0431\u043B\u043E\u043A  garage_battle_lizards"
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1340448915}
+  - {fileID: 1340448914}
+  - {fileID: 1340448912}
+  suppressAllAutoSelections: 0
+--- !u!114 &1340448914
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1067
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 784981403}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5db7f74c81b273140b9a7df1489b1902, type: 3}
+  offset: 0
+  fromPosition: {fileID: 494650168}
+  toPosition: {fileID: 1184947498}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448915
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1066
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 295098127}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 494650168}
+  toPosition: {fileID: 1184947498}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448916
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1065
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 295098127}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0b23235f3b60cde42b9303dfb929f52c, type: 3}
+  offset: 0
+  fromPosition: {fileID: 494650168}
+  toPosition: {fileID: 1184947498}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448918
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1070
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1656907864}
+  targetComponentAssemblyName: BoysVsLizards.BattleController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleController
+  targetMethod: StopMusic
+  targetMethodText: 'StopMusic (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1340448919
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1069
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1656907864}
+  targetComponentAssemblyName: BoysVsLizards.BattleController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleController
+  targetMethod: StartHvostLizardBattle
+  targetMethodText: 'StartHvostLizardBattle (String, String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: garage_battle_kirpich
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: garage_battle_lizards_lose
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1340448920
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1068
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 784981403}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 494650168}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448921
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 953.52527
+    y: 573.99445
+    width: 202.63162
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 1071
+  blockName: garage_battle_lizards_lose
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1340448925}
+  - {fileID: 1340448924}
+  - {fileID: 1340448923}
+  - {fileID: 1340448933}
+  - {fileID: 1340448922}
+  suppressAllAutoSelections: 0
+--- !u!114 &1340448922
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1072
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1340448322}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1340448923
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1073
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1656907864}
+  targetComponentAssemblyName: BoysVsLizards.BattleController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleController
+  targetMethod: StopMusic
+  targetMethodText: 'StopMusic (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1340448924
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1075
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 295098127}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 494650168}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448925
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1074
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 784981403}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 494650168}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448927
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1078
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1656907864}
+  targetComponentAssemblyName: BoysVsLizards.BattleController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleController
+  targetMethod: StopMusic
+  targetMethodText: 'StopMusic (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1340448928
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1077
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1656907864}
+  targetComponentAssemblyName: BoysVsLizards.BattleController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleController
+  targetMethod: StopMusic
+  targetMethodText: 'StopMusic (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1340448929
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1076
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1656907864}
+  targetComponentAssemblyName: BoysVsLizards.BattleController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleController
+  targetMethod: StartBoysBattle
+  targetMethodText: 'StartBoysBattle (String, String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: street_battle_with_boys_finish
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: street_battle_with_boys
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1340448930
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1080
+  indentLevel: 0
+--- !u!114 &1340448931
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1079
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: e0dc1115e1202424db4d0435b12bb14f, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1340448933
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1081
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: e0dc1115e1202424db4d0435b12bb14f, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1340448934
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1082
+  indentLevel: 0
+  volume: 0.1
+  fadeDuration: 1
+  waitUntilFinished: 1
+--- !u!114 &1340448935
+MonoBehaviour:
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25405,9 +26149,154 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1340448677}
+  parentBlock: {fileID: 1340448322}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
+--- !u!114 &1340448936
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1084
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: e0dc1115e1202424db4d0435b12bb14f, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1340448937
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1083
+  indentLevel: 0
+  volume: 0.1
+  fadeDuration: 1
+  waitUntilFinished: 1
+--- !u!114 &1340448938
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1085
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: e0dc1115e1202424db4d0435b12bb14f, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1340448939
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1087
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 479228862}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 494650168}
+  toPosition: {fileID: 494650168}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448940
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1086
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1734996391}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 494650168}
+  toPosition: {fileID: 494650168}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1340448941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1089
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: e0dc1115e1202424db4d0435b12bb14f, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1340448942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340447972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1088
+  indentLevel: 0
 --- !u!1 &1346664763
 GameObject:
   m_ObjectHideFlags: 0
@@ -25899,7 +26788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slidingFight: {fileID: 1043799629}
   _rhythmGame: {fileID: 1016676166226136387}
-  _lizardEnemy: {fileID: 11400000, guid: 1acb734f6d654ed49867e5d42a245923, type: 2}
+  _lizardHvostEnemy: {fileID: 11400000, guid: 1acb734f6d654ed49867e5d42a245923, type: 2}
+  _lizardKirpichEnemy: {fileID: 11400000, guid: 097c51788cf33f7429419c95cd4a3824, type: 2}
   _lizardGeneralEnemy: {fileID: 11400000, guid: 676f0b30620164a4299bca97a1069b81, type: 2}
   _boysSettings: {fileID: 11400000, guid: 44e8bdadf31d0c6468e6b8484e66a1ba, type: 2}
 --- !u!4 &1656907866
@@ -26660,7 +27550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.25882354, g: 0.25490198, b: 0.2627451, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

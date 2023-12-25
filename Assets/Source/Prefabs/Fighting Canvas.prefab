@@ -343,10 +343,10 @@ RectTransform:
   m_Father: {fileID: 2537283084365906602}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 428, y: 181}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.81173474, y: 0.75059754}
+  m_AnchorMax: {x: 0.9110001, y: 0.947}
+  m_AnchoredPosition: {x: 4, y: 1.5}
+  m_SizeDelta: {x: 9, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2537283084365906601
 GameObject:
@@ -489,6 +489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2af61d865f40b0814be65a15f3cd72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
+  _music: {fileID: 0}
   LeftBorder: {fileID: 2537283084930938684}
   RightBorder: {fileID: 2537283085189322635}
   SlidingBar: {fileID: 2537283085297889771}
@@ -1222,10 +1224,10 @@ RectTransform:
   m_Father: {fileID: 2537283084365906602}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -423, y: 174}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.078, y: 0.75059754}
+  m_AnchorMax: {x: 0.194, y: 0.947}
+  m_AnchoredPosition: {x: 0, y: -2}
+  m_SizeDelta: {x: -6, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2537283085189322635
 GameObject:

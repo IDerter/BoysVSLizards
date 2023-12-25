@@ -1,5 +1,4 @@
-﻿using Fungus;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace BoysVsLizards
 {
@@ -7,16 +6,24 @@ namespace BoysVsLizards
     {
         [SerializeField] private SlidingFight _slidingFight;
         [SerializeField] private MusicController _rhythmGame;
-        [SerializeField] private EnemySettingSO _lizardEnemy;
+        [SerializeField] private EnemySettingSO _lizardHvostEnemy;
+        [SerializeField] private EnemySettingSO _lizardKirpichEnemy;
         [SerializeField] private EnemySettingSO _lizardGeneralEnemy;
         [SerializeField] private EnemySettingSO _boysSettings;
 
 
-        public void StartLizardBattle(string victoryBlockName, string loseBlockName)
+        public void StartHvostLizardBattle(string victoryBlockName, string loseBlockName)
         {
             _slidingFight.gameObject.SetActive(true);
-            _slidingFight.Init(_lizardEnemy.Health, _lizardEnemy.Damage, victoryBlockName, loseBlockName);
+            _slidingFight.Init(_lizardHvostEnemy.Health, _lizardHvostEnemy.Damage, victoryBlockName, loseBlockName);
         }
+        
+        public void StartKirpichLizardBattle(string victoryBlockName, string loseBlockName)
+        {
+            _slidingFight.gameObject.SetActive(true);
+            _slidingFight.Init(_lizardKirpichEnemy.Health, _lizardKirpichEnemy.Damage, victoryBlockName, loseBlockName);
+        }
+
 
         public void StartDanceBattle(string victoryBlockName, string loseBlockName)
         {
@@ -39,6 +46,16 @@ namespace BoysVsLizards
         public void StartGeneralLizardBattle(string victoryBlockName, string loseBlockName)
         {
             _slidingFight.Init(_lizardGeneralEnemy.Health, _lizardGeneralEnemy.Damage, victoryBlockName, loseBlockName);
+        }
+
+        public void InitMusic()
+        {
+            _slidingFight.InitMusic();
+        }
+
+        public void StopMusic()
+        {
+            _slidingFight.StopMusic();
         }
     }
 }

@@ -1,0 +1,190 @@
+Index: Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta
+===================================================================
+diff --git a/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta b/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta
+deleted file mode 100644
+--- a/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta	(revision 7a18fd7afa710eb667ec9c09e68e17b929a437e3)
++++ /dev/null	(revision 7a18fd7afa710eb667ec9c09e68e17b929a437e3)
+@@ -1,7 +0,0 @@
+-fileFormatVersion: 2
+-guid: fd02c799f3f5c4c83b2fc26c105a3821
+-DefaultImporter:
+-  externalObjects: {}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta
+===================================================================
+diff --git a/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta b/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta
+deleted file mode 100644
+--- a/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta	(revision 7a18fd7afa710eb667ec9c09e68e17b929a437e3)
++++ /dev/null	(revision 7a18fd7afa710eb667ec9c09e68e17b929a437e3)
+@@ -1,7 +0,0 @@
+-fileFormatVersion: 2
+-guid: 81dbcde0f90df4e9ba9ca2794490e57a
+-DefaultImporter:
+-  externalObjects: {}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: .idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml b/.idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml
+new file mode 100644
+--- /dev/null	(date 1703510417407)
++++ b/.idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml	(date 1703510417407)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RiderProjectSettingsUpdater">
++    <option name="vcsConfiguration" value="2" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.BoysVSLizards/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/vcs.xml b/.idea/.idea.BoysVSLizards/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1703510417390)
++++ b/.idea/.idea.BoysVSLizards/.idea/vcs.xml	(date 1703510417390)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.BoysVSLizards/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/workspace.xml b/.idea/.idea.BoysVSLizards/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1703524640715)
++++ b/.idea/.idea.BoysVSLizards/.idea/workspace.xml	(date 1703524640715)
+@@ -0,0 +1,98 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="41d43216-8c6b-44ae-93dd-af00bba5d1bb" name="Changes" comment="" />
++    <list id="0ef8faf4-f574-4918-abd0-448fc49fe54d" name="1111" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/indexLayout.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/projectSettingsUpdater.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_46__1111_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_46__1111_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_46__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_48__1111_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_48__1111_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BoysVSLizards/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2023_14_48__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta" beforeDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bae255e3e08e46f7bc2fbd23dde96338158800/5c/4dfb00b8/CustomYieldInstruction.cs" root0="SKIP_HIGHLIGHTING" />
++    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bae255e3e08e46f7bc2fbd23dde96338158800/af/0f125457/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
++    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bae255e3e08e46f7bc2fbd23dde96338158800/54/f0e335e3/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2a2Ij6OgiYvWhNM5qsLpLNGXzyn" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">
++    <property name="Discover.Launch.Via.Unity" value="true" />
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="rider.run.widget.enabled.cache" value="false" />
++    <property name="vue.rearranger.settings.migration" value="true" />
++  </component>
++  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
++    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
++      <option name="allowRunningInParallel" value="false" />
++      <option name="listenPortForConnections" value="false" />
++      <option name="pid" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <method v="2" />
++    </configuration>
++    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
++      <option name="allowRunningInParallel" value="false" />
++      <option name="listenPortForConnections" value="false" />
++      <option name="pid" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <method v="2" />
++    </configuration>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="41d43216-8c6b-44ae-93dd-af00bba5d1bb" name="Changes" comment="" />
++      <changelist id="0ef8faf4-f574-4918-abd0-448fc49fe54d" name="1111" comment="" />
++      <created>1703510388185</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1703510388185</updated>
++      <workItem from="1703510391457" duration="1310000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
++  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
++  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.BoysVSLizards/.idea/indexLayout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.BoysVSLizards/.idea/indexLayout.xml b/.idea/.idea.BoysVSLizards/.idea/indexLayout.xml
+new file mode 100644
+--- /dev/null	(date 1703510343750)
++++ b/.idea/.idea.BoysVSLizards/.idea/indexLayout.xml	(date 1703510343750)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="UserContentModel">
++    <attachedFolders />
++    <explicitIncludes />
++    <explicitExcludes />
++  </component>
++</project>
+\ No newline at end of file
