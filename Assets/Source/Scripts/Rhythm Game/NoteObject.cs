@@ -13,6 +13,8 @@ namespace BoysVsLizards
         [SerializeField] private KeyCode _keyToPress;
         private Animator _arrowAnimator;
 
+        private float _timeDie = 3f;
+
         private void Start()
         {
             _beatTemp /= 60f;
@@ -28,6 +30,7 @@ namespace BoysVsLizards
         private void EndMusicBattle()
         {
             _arrowAnimator.enabled = true;
+            Destroy(gameObject, _timeDie);
         }
 
         private void Update()
