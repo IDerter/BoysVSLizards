@@ -6,6 +6,7 @@ namespace BoysVsLizards
     public class BattleController : MonoBehaviour
     {
         [SerializeField] private SlidingFight _slidingFight;
+        [SerializeField] private MusicController _rhythmGame;
         [SerializeField] private EnemySettingSO _lizardEnemy;
         [SerializeField] private EnemySettingSO _lizardGeneralEnemy;
         [SerializeField] private EnemySettingSO _boysSettings;
@@ -15,6 +16,18 @@ namespace BoysVsLizards
         {
             _slidingFight.gameObject.SetActive(true);
             _slidingFight.Init(_lizardEnemy.Health, _lizardEnemy.Damage, victoryBlockName, loseBlockName);
+        }
+
+        public void StartDanceBattle(string victoryBlockName, string loseBlockName)
+        {
+            _rhythmGame.enabled = true;
+            _rhythmGame._prefabGame.SetActive(true);
+            _rhythmGame.Init(victoryBlockName, loseBlockName);
+        }
+
+        public void StopDanceBattle()
+        {
+            _rhythmGame.enabled = false;
         }
 
         public void StartBoysBattle(string victoryBlockName, string loseBlockName)

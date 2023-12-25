@@ -10,8 +10,15 @@ namespace BoysVsLizards
         [SerializeField] private GameObject _spawnArrowObject;
         [SerializeField] private bool _hasStarted;
         private float _timer = 0f;
-        [SerializeField] private float _timeEndFight = 30f;
+        [SerializeField] private float _startTimeEndFight;
+        public float StartTimeEndFight => _startTimeEndFight;
+        private float _timeEndFight;
+        public float TimeEndFight { get { return _timeEndFight; } set { _timeEndFight = value; } }
 
+        private void Start()
+        {
+            _timeEndFight = _startTimeEndFight;
+        }
 
         private void Update()
         {

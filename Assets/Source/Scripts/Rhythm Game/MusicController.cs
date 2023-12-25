@@ -1,3 +1,4 @@
+using Fungus;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,12 +21,26 @@ namespace BoysVsLizards
 
         [SerializeField] private int _conditionWinScore;
         public int GetConditionWinScore => _conditionWinScore;
+        private string _victoryBlockName, _loseBlockName;
+
+        public GameObject _prefabGame;
+
+        [SerializeField] private Flowchart _flowchart;
 
         private void Start()
         {
             _scoreText.text = "Очки: 0";
             SpawnerArrows.Instance.EndMusicBattle += EndMusicBattle;
             ButtonController.Instance.ButtonPressed += ButtonPressed;
+        }
+
+        public void Init(string _victoryBlockName, string _loseBlockName)
+        {
+            this._victoryBlockName = _victoryBlockName;
+            this._loseBlockName = _loseBlockName;
+            _scoreText.text = "Очки: 0";
+            SpawnerArrows.Instance.enabled = true;
+            ButtonController.Instance.enabled = true;
         }
 
         private void ButtonPressed()
@@ -60,14 +75,16 @@ namespace BoysVsLizards
             if (_currentScore > _conditionWinScore)
             {
                 Debug.Log("You Win");
-
+                _flowchart.ExecuteBlock(_victoryBlockName);
             }
             else
             {
                 Debug.Log("You Lose!");
-
+                _flowchart.ExecuteBlock(_loseBlockName);
             }
+            _prefabGame.SetActive(false);
             ButtonController.Instance.enabled = false;
+            SpawnerArrows.Instance.TimeEndFight = SpawnerArrows.Instance.StartTimeEndFight;
         }
 
         public void NoteHit()
